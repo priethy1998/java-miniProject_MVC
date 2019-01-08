@@ -84,11 +84,12 @@ public class AddressBookController {
             String mobile = contactDetailsPanel.getMobileField().getText();
             String email = contactDetailsPanel.geteMailField().getText();
             String address = contactDetailsPanel.getAddressField().getText();
+            String pincode = contactDetailsPanel.getPincodeField().getText();
             flag = validate();
             if(flag)
             {    
              Person person = new Person();
-             person.setData(name,mobile,email,address);
+             person.setData(name,mobile,email,address,pincode);
              daoimplement.addPerson(person);
              dialog.getFrame().dispose();
              view.getMainGUIFrame().setVisible(true);
@@ -172,11 +173,12 @@ public class AddressBookController {
                 String mobile = contactDetailsPanel.getMobileField().getText();
                 String email = contactDetailsPanel.geteMailField().getText();
                 String address = contactDetailsPanel.getAddressField().getText();
+                String pincode = contactDetailsPanel.getPincodeField().getText();
                 flag = validate();
                 if(flag)
                 {    
                 Person person = new Person();
-                person.setData(name,mobile,email,address);
+                person.setData(name,mobile,email,address,pincode);
                 daoimplement.updatePerson(person,originalName);
                 dialog.getFrame().dispose();
                 view.getMainGUIFrame().setVisible(true);

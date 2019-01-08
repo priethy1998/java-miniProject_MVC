@@ -45,6 +45,12 @@ public class DetailViewPanel extends javax.swing.JPanel {
         return txt_address;
         
     }
+      public javax.swing.JTextField getPincodeField()
+    {
+        
+        return txt_pincode;
+        
+    }
       public void setName(String name)
       {
           txt_name.setText(name);
@@ -61,6 +67,10 @@ public class DetailViewPanel extends javax.swing.JPanel {
       {
           txt_address.setText(address);
       }
+        public void setPincode(String pincode)
+      {
+          txt_pincode.setText(pincode);
+      }
         public JComponent getComponent() 
         {
             return this;
@@ -75,6 +85,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -83,6 +94,8 @@ public class DetailViewPanel extends javax.swing.JPanel {
         txt_email = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         txt_address = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        txt_pincode = new javax.swing.JTextField();
 
         setBackground(new java.awt.Color(255, 204, 204));
         setForeground(new java.awt.Color(255, 153, 153));
@@ -122,6 +135,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
         jLabel4.setText("Address");
 
         txt_address.setBackground(new java.awt.Color(240, 240, 240));
+        txt_address.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
         txt_address.setForeground(new java.awt.Color(255, 0, 153));
         txt_address.setName("txt_address"); // NOI18N
         txt_address.addActionListener(new java.awt.event.ActionListener() {
@@ -129,6 +143,15 @@ public class DetailViewPanel extends javax.swing.JPanel {
                 txt_addressActionPerformed(evt);
             }
         });
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 102, 102));
+        jLabel5.setText("Pincode");
+        jLabel5.setName(""); // NOI18N
+
+        txt_pincode.setBackground(new java.awt.Color(240, 240, 240));
+        txt_pincode.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
+        txt_pincode.setForeground(new java.awt.Color(102, 102, 0));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -141,13 +164,15 @@ public class DetailViewPanel extends javax.swing.JPanel {
                     .addComponent(jLabel2)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel5))
                 .addGap(57, 57, 57)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(txt_name)
                     .addComponent(txt_mobileno)
                     .addComponent(txt_email, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
-                    .addComponent(txt_address))
+                    .addComponent(txt_address)
+                    .addComponent(txt_pincode))
                 .addContainerGap(23, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -172,8 +197,14 @@ public class DetailViewPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(txt_address, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(txt_pincode, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(106, Short.MAX_VALUE))
         );
+
+        jLabel5.getAccessibleContext().setAccessibleName("Pincode");
     }// </editor-fold>//GEN-END:initComponents
 
     private void txt_mobilenoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_mobilenoActionPerformed
@@ -185,13 +216,16 @@ public class DetailViewPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_txt_addressActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JTextField txt_address;
     private javax.swing.JTextField txt_email;
     private javax.swing.JTextField txt_mobileno;
     private javax.swing.JTextField txt_name;
+    private javax.swing.JTextField txt_pincode;
     // End of variables declaration//GEN-END:variables
 }
