@@ -97,7 +97,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         txt_pincode = new javax.swing.JTextField();
 
-        setBackground(new java.awt.Color(255, 204, 204));
+        setBackground(new java.awt.Color(255, 255, 0));
         setForeground(new java.awt.Color(255, 153, 153));
         setToolTipText("");
 
@@ -132,7 +132,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(204, 0, 0));
-        jLabel4.setText("Address");
+        jLabel4.setText("Address*");
 
         txt_address.setBackground(new java.awt.Color(240, 240, 240));
         txt_address.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
@@ -160,13 +160,12 @@ public class DetailViewPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGap(41, 41, 41)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jLabel5))
-                .addGap(57, 57, 57)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(48, 48, 48)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(txt_name)
                     .addComponent(txt_mobileno)
@@ -203,8 +202,6 @@ public class DetailViewPanel extends javax.swing.JPanel {
                     .addComponent(txt_pincode, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(106, Short.MAX_VALUE))
         );
-
-        jLabel5.getAccessibleContext().setAccessibleName("Pincode");
     }// </editor-fold>//GEN-END:initComponents
 
     private void txt_mobilenoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_mobilenoActionPerformed
